@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MealFoodsDto>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3" style="background-color:darkgrey">
+        <h6 class="m-0 font-weight-bold text-primary" style="color:coral">Beslenme Listesi</h6>
+    </div>
+    <div class="card-body" style="background-color:white">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="besinListeTablosu" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            <label>Besin İsmi</label>
+                        </th>
+                        <th>
+                            <label>Hangi Öğün </label>
+                        </th>
+                        <th>
+                            <label>Hangi Gün</label>
+                        </th>
+                        @*<th>
+                                @Html.DisplayNameFor(model => model.Food.Name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ThatDay.EnumMealType)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ThatDay.NutritionDays.Name)
+                            </th>*@
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Food.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ThatDay.EnumMealType)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ThatDay.NutritionDays.Name)
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

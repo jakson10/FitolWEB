@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitOl.WebUI", "FitOl.WebUI\FitOl.WebUI.csproj", "{944CD5EC-A6A2-4D8E-A01D-7C172349076B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{944CD5EC-A6A2-4D8E-A01D-7C172349076B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944CD5EC-A6A2-4D8E-A01D-7C172349076B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944CD5EC-A6A2-4D8E-A01D-7C172349076B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944CD5EC-A6A2-4D8E-A01D-7C172349076B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D4CA259-CCA2-490F-81F2-F68B18531541}
+	EndGlobalSection
+EndGlobal

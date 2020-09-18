@@ -1,0 +1,55 @@
+﻿@model ProfileEditing
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section NormalLayout{
+    <div class="main-w3pvt mian-content-wthree text-center" id="home">
+        <div class="container">
+            <br />
+            <br />
+            <br />
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <form method="post" asp-action="ProfileEditing">
+                        <div class="form-group">
+                            <label asp-for="Calorie" class="control-label"></label>
+                            <input asp-for="Calorie" class="form-control" />
+                            <span asp-validation-for="Calorie" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Weight" class="control-label"></label>
+                            <input asp-for="Weight" class="form-control" />
+                            <span asp-validation-for="Weight" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Height" class="control-label"></label>
+                            <input asp-for="Height" class="form-control" />
+                            <span asp-validation-for="Height" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="FatRate" class="control-label"></label>
+                            <input asp-for="FatRate" class="form-control" />
+                            <span asp-validation-for="FatRate" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Age" class="control-label"></label>
+                            <input asp-for="Age" class="form-control" />
+                            <span asp-validation-for="Age" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-info">Kaydet</button>
+                        </div>
+                        <div>
+                            <a asp-controller="User" asp-action="Profile" class="btn btn-warning">Profiliniz</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}

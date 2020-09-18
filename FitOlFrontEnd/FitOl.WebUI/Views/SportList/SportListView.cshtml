@@ -1,0 +1,65 @@
+﻿@model IEnumerable<AreaMovementsDto>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3" style="background-color:darkgrey">
+        <h6 class="m-0 font-weight-bold text-primary" style="color:coral">Beslenme Listesi</h6>
+    </div>
+    <div class="card-body" style="background-color:white">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="sporListeTablosu" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            <label>Hangi Gün</label>
+                        </th>
+                        <th>
+                            <label>Etki Ettiği Bölge </label>
+                        </th>
+                        <th>
+                            <label>Hareket İsmi</label>
+                        </th>
+                        <th>
+                            <label>Hareket Açıklaması</label>
+                        </th>
+                        @*<th>
+                            @Html.DisplayNameFor(model => model.Area.SportDay.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Area.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Movement.MovementName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Movement.MovementDescription)
+                        </th>*@
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th>
+                                @Html.DisplayFor(modelItem => item.Area.SportDay.Name)
+                            </th>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Area.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Movement.MovementName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Movement.MovementDescription)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
